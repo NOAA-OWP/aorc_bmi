@@ -5,7 +5,7 @@
 extern "C" {
 #endif
 
-#include "../../include/bmi.h"
+#include "bmi.h"
 #include "aorc.h"
 
 Bmi* register_bmi_aorc(Bmi *model);

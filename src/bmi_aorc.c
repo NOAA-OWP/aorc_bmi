@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
-#include "../../include/bmi.h"
+#include "../include/bmi.h"
 #include "../include/aorc.h"
 #include "../include/bmi_aorc.h"
 
