@@ -17,4 +17,4 @@ jobs:
       - uses: actions/add-to-project@v0.6.1
         with:
           project-url: https://github.com/orgs/NOAA-OWP/projects/30 
-          github-token: ${{ secrets.PAT_FOR_ACCESS_PROJECTS_30_DAYS }}
+          github-token: ${{ secrets.TEST_OWP_ORG_PROJECT_READ_WRITE_PAT }}
