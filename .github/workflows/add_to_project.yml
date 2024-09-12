@@ -1,7 +1,11 @@
 name: Add to Project
 
+# DISCLAIMER: Never add a job that checks out code in this action 
+# as the secrets and tokens have repo write access. See link for more info 
+# https://securitylab.github.com/resources/github-actions-preventing-pwn-requests/
+
 on:
-  pull_request:
+  pull_request_target:
     types:
       - opened
   issues:
@@ -10,7 +14,7 @@ on:
 
 jobs:
   add-to-project:
-    name: Add issues to formulation project
+    name: Add issues and PRs to formulation project
     runs-on: ubuntu-latest
     steps:
       - uses: actions/add-to-project@v0.6.1
